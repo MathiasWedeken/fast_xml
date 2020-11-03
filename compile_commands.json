@@ -1,0 +1,10 @@
+[
+{ "file"      : "c_src/fxml.c"
+, "directory" : "/Users/mathiaswedeken/phoenix/fast_xml"
+, "command"   : "cc -c -g -O2 -Wall -g -Wall -fPIC -MMD -I\"/usr/local/Cellar/erlang/23.1.1/lib/erlang/lib/erl_interface-4.0.1/include\" -I\"/usr/local/Cellar/erlang/23.1.1/lib/erlang/erts-11.1.1/include\" c_src/fxml.c -o c_src/fxml.o"
+}
+{ "file"      : "c_src/fxml_stream.c"
+, "directory" : "/Users/mathiaswedeken/phoenix/fast_xml"
+, "command"   : "cc -c -g -O2 -Wall -g -Wall -fPIC -MMD -I\"/usr/local/Cellar/erlang/23.1.1/lib/erlang/lib/erl_interface-4.0.1/include\" -I\"/usr/local/Cellar/erlang/23.1.1/lib/erlang/erts-11.1.1/include\" c_src/fxml_stream.c -o c_src/fxml_stream.o"
+}
+]
