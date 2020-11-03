@@ -5,7 +5,7 @@ c_src/*.gcda
 c_src/*.gcno
 config.log
 config.status
-ebin
+#ebin
 priv/lib/*.so
 priv/lib/*.dSYM
 .eunit
