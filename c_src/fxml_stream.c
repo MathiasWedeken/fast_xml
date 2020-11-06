@@ -795,7 +795,7 @@ static state_t *init_parser_state(ErlNifPid *pid)
     ASSERT(state->pid);
     memcpy(state->pid, pid, sizeof(ErlNifPid));
   }
-  state->parser = XML_ParserCreate_MM("UTF-8", &ms, "\n");
+  state->parser = XML_ParserCreate_MM("ASCII", &ms, "\n");
   setup_parser(state);
   return state;
 }
@@ -835,7 +835,7 @@ static ERL_NIF_TERM reset_nif(ErlNifEnv* env, int argc,
   if (!enif_get_resource(env, argv[0], parser_state_t, (void *) &state))
     return enif_make_badarg(env);
 
-  ASSERT(XML_ParserReset(state->parser, "UTF-8"));
+  ASSERT(XML_ParserReset(state->parser, "ASCII"));
   setup_parser(state);
 
   free_parser_allocated_structs(state);
